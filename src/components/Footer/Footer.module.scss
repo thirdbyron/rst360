@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+
+.footer {
+  display: grid;
+  height: 15vh;
+  background-color: $rstColor;
+  justify-items: center;
+}
+
+.copyright {
+  color: $whiteColor;
+  font-weight: 300;
+  font-size: 14px;
+}

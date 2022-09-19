@@ -1,0 +1,67 @@
+@import '../../../../variables.scss';
+
+.benefitsList {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: auto 1fr auto;
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 60px;
+  justify-self: center;
+  row-gap: 15px;
+}
+
+.slider {
+  width: 100%;
+  height: 415px;
+  grid-template-areas: 'overlap';
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  justify-items: center;
+}
+
+.benefitsNav {
+  position: absolute;
+  top: 425px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 30px));
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.emptyDot {
+  border: 1px solid lightgray;
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.emptyDotBig {
+  width: 18px;
+  height: 18px;
+  cursor: default;
+}
+
+.choosenDot {
+  background-color: $secondBlue;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}

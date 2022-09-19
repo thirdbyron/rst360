@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.contactForm {
+  display: grid;
+  justify-items: center;
+  margin: 50px 0px;
+  gap: 30px;
+  width: 70%;
+  justify-self: center;
+}
+
+.info {
+  width: 80%;
+  display: grid;
+  gap: 5px;
+  padding-left: 10px;
+  justify-items: center;
+}
+
+.form {
+  width: 60%;
+  display: grid;
+  gap: 30px;
+}
+
+.submitButton {
+  background-color: $secondBlue;
+  font-size: 17px;
+  color: $whiteColor;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+ justify-self: center;
+  width: 30%;
+  height: 6vh;
+}
