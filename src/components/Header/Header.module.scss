@@ -4,20 +4,22 @@
   position: fixed;
   top: -0px;
   width: 100%;
-  height: 12vh;
+  min-height: auto;
   background-color: $rstColor;
   display: grid;
   align-items: center;
   justify-items: center;
-  box-shadow: 0px 7px 5px -5px $shadow2;
+  box-shadow: 0px 8px 5px -5px rgba(59, 59, 61, 0.8);
   z-index: 10;
   transition: 0.5s ease-out;
+  border-bottom: 2px solid rgba(33, 92, 187, 0.3);
 }
 
 .headerFixed {
   background-color: $rstColorOpacity;
-  height: $marginTop;
-  transition: 0.5s ease-out;
+  min-height: auto;
+  border-bottom: 2px solid rgb(21, 73, 156);
+  transition: 0.5s ease-in;
 }
 
 .wrapper {
@@ -25,7 +27,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  padding: 15px 0px;
+  margin: 1vmin 0px;
 }
 
 .nav {
@@ -35,20 +37,26 @@
 
   &List {
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, minmax(auto, 100px));
     justify-content: space-evenly;
-    padding: 0px 80px;
-
+    padding: 0px 3vmax;
   }
 
   &Links {
-
     text-align: center;
     padding: 15px;
+
     &Text {
       font-size: 15px;
       color: $whiteColor;
       font-weight: 400;
+    }
+
+    @media only screen and (max-width: 1150px) {
+      &Text {
+        font-size: 13px;
+      }
     }
   }
 }
@@ -57,18 +65,26 @@
   display: grid;
   justify-items: end;
   align-items: center;
-  height: 70%;
+  height: auto;
+  gap: 1vh;
   grid-template-rows: auto auto;
   &Item {
-    
     display: grid;
     align-items: center;
     gap: 10px;
     grid-template-columns: auto 1fr;
+
     &Text {
       display: grid;
       color: $whiteColor;
-      font-size: 13px;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    @media only screen and (max-width: 1150px) {
+      &Text {
+        font-size: 12px;
+      }
     }
   }
 }

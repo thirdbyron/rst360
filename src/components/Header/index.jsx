@@ -6,7 +6,6 @@ import styles from './Header.module.scss';
 
 export default React.memo(function Header() {
   const [isSticky, setIsSticky] = useState(false);
-  console.log('gfd');
   useEffect(() => {
     window.addEventListener('scroll', makeHeaderSticky);
 

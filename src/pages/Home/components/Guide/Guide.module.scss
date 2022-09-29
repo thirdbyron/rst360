@@ -1,13 +1,42 @@
+@import '../../../../variables.scss';
+
 .guide {
   display: grid;
   justify-items: center;
+  height: auto;
+  color: white;
+  align-items: start;
+  background-image: url('../../../../../public/img/background-guide.jpg');
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.wrapper {
-  margin-top: 10px;
-  width: 80%;
+.title {
+  display: none;
+}
+
+.guideList {
+  transition: 0.5s;
+  height: auto;
+  width: 86%;
+  border-radius: 4vh;
+  margin: 10vw 0;
+  padding: 0 2%;
+  position: relative;
+
+
   display: grid;
   grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   justify-items: center;
-  grid-template-columns: auto;
+  justify-content: space-evenly;
+  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 5vh;
+}
+
+.guideListToggle {
+  margin: 3vmax 0;
+  transition: 0.5s;
 }
